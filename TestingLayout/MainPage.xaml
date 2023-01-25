@@ -1,18 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TestingLayout.MainPage">
+             x:Class="TestingLayout.MainPage"
+             Background="Green">
 
     <ScrollView>
-        
-        
-        
-        
-        
-        
-        
-        
-        
         <!--<Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" /> 
@@ -24,9 +16,7 @@
             </Grid.ColumnDefinitions>
             <Label Text="Partner Code" Grid.Row="0" Grid.Column="1"/>
         </Grid>-->
-        
-        
-        
+  
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
@@ -50,13 +40,18 @@
             </Grid.RowDefinitions>
             
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Text="Partner Code" Grid.Row="0" Grid.Column="0" />
-            <Entry Placeholder="Lp Partner code(optional)" Grid.Row="1" Grid.Column="0"  />
+            <Label Text="Partner Code" Grid.Row="0" Grid.Column="0" BackgroundColor="Yellow" />
+
+            <!--<StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="Red" />
+            <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="Yellow" />
+            <StackLayout Grid.Row="0" Grid.Column="2" BackgroundColor= "Blue" />-->
+
+
+
+            <Entry Placeholder="Lp Partner code(optional)" Grid.Row="1" Grid.Column="0" HorizontalOptions ="Center"  />
             <Label Text="Name" Grid.Row="2" Grid.Column="0" />
             <Entry Placeholder="Stratos" Grid.Row="3" Grid.Column="0" TextColor="Grey"/>
             <Label Text="Surname" Grid.Row="4" Grid.Column="0" />
@@ -66,15 +61,25 @@
             <Label Text="Address" Grid.Row="8" Grid.Column="0" />
             <Entry Placeholder="Type your shipping address" Grid.Row="9" Grid.Column="0" TextColor="Grey"/>
             <Label Text="Phone Number" Grid.Row="10" Grid.Column="0" />
-            <Entry Placeholder="6988554555" Grid.Row="11" Grid.Column="0" TextColor="Grey"/>
+            <!--<Entry Placeholder="6988554555" Grid.Row="11" Grid.Column="0" TextColor="Grey"/>
             <Label Text="E-mail" Grid.Row="12" Grid.Column="0" />
-            <Entry Placeholder="Type your e-mail" Grid.Row="13" Grid.Column="0" TextColor="Grey"/>
+            <Entry Placeholder="Type your e-mail" Grid.Row="13" Grid.Column="0" TextColor="Grey"/>-->
             <Label Text="Password" Grid.Row="14" Grid.Column="0" />
             <Entry Placeholder="Type a password" Grid.Row="15" Grid.Column="0" TextColor="Grey"/>
             <Label Text="Confirm password" Grid.Row="16" Grid.Column="0" />
             <Entry Placeholder="Type a password" Grid.Row="17" Grid.Column="0" TextColor="Grey"/>
-            <Label Text="I agree with all" Grid.Row="18" Grid.Column="0" />
-            <Button Text="Register" Grid.Row="19" Grid.Column="0"/>
+            <Grid Grid.Row="18" Grid.Column="0" BackgroundColor="Pink" ColumnDefinitions="*,*">
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>-->
+                <Label Text="I agree with all" Grid.Column="0"  />
+
+                <Label Text="I" Grid.Column="1"  />
+
+            </Grid>
+            
+            <!--<Button Text="Register" Grid.Row="19" Grid.Column="0"/>-->
         </Grid>
 
         <!--<Grid>
